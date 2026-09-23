@@ -1,0 +1,553 @@
+:root {
+
+    --color-principal: #527a72;
+    --color-secundario: #eaf1ef;
+    --color-texto: #33403d;
+    --color-claro: #ffffff;
+
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+    background-color: #ffffff;
+
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+
+    padding: 22px 0;
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+
+.logo {
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-principal);
+
+}
+
+
+.logo i {
+
+    margin-right: 5px;
+
+}
+
+
+.nav-link {
+
+    color: #555;
+    margin: 0 12px;
+    font-size: 0.95rem;
+
+}
+
+
+.nav-link:hover {
+
+    color: var(--color-principal);
+
+}
+
+
+.nav-link.active {
+
+    color: var(--color-principal) !important;
+    font-weight: 600;
+
+}
+
+
+/* ================================
+   BOTONES
+================================ */
+
+.btn-main {
+
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 3px;
+
+}
+
+
+.btn-main:hover {
+
+    background-color: #3d615a;
+    color: white;
+
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero-section {
+
+    padding: 65px 0 55px 0;
+
+}
+
+
+.hero-content {
+
+    padding-right: 50px;
+
+}
+
+
+.hero-content h1 {
+
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.15;
+
+}
+
+
+.hero-content p {
+
+    color: #6c757d;
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 25px;
+
+}
+
+
+.hero-image-container {
+
+    text-align: center;
+
+}
+
+
+.hero-image {
+
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    object-fit: cover;
+
+}
+
+
+/* ================================
+   SERVICIOS
+================================ */
+
+.services-section {
+
+    padding: 45px 0 55px 0;
+
+}
+
+
+.service-item {
+
+    text-align: center;
+    padding: 15px 30px;
+
+}
+
+
+.service-icon {
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px auto;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+
+    font-size: 1.7rem;
+
+}
+
+
+.service-item h2 {
+
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+
+}
+
+
+.service-item p {
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #777;
+
+}
+
+
+/* ================================
+   IMAGEN DESTACADA
+================================ */
+
+.featured-image-section {
+
+    padding: 25px 0 60px 0;
+
+}
+
+
+.featured-image-container {
+
+    width: 100%;
+    height: 220px;
+
+}
+
+
+.featured-image {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+/* ================================
+   SOBRE MI
+================================ */
+
+.about-section {
+
+    padding: 30px 0 70px 0;
+
+}
+
+
+.about-content {
+
+    padding-right: 50px;
+
+}
+
+
+.about-content h2 {
+
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+
+.about-content p {
+
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 15px;
+
+}
+
+
+.about-image {
+
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+}
+
+
+/* ================================
+   CTA
+================================ */
+
+.cta-section {
+
+    padding: 20px 0 60px 0;
+
+}
+
+
+.cta-container {
+
+    padding: 35px;
+    background-color: var(--color-secundario);
+
+}
+
+
+.cta-container h2 {
+
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+}
+
+
+.cta-container p {
+
+    color: #66716e;
+    margin-bottom: 0;
+
+}
+
+
+.form-control {
+
+    border-radius: 3px;
+
+}
+
+
+.input-group .btn {
+
+    white-space: nowrap;
+
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+
+    padding: 25px 0;
+    background-color: var(--color-principal);
+    color: white;
+
+}
+
+
+.footer-logo {
+
+    margin-bottom: 0;
+    font-weight: 600;
+
+}
+
+
+.footer-social {
+
+    text-align: right;
+
+}
+
+
+.footer-social a {
+
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    text-decoration: none;
+
+}
+
+
+/* ================================
+   RESPONSIVE TABLET
+================================ */
+
+@media (max-width: 991px) {
+
+
+    .hero-content {
+
+        padding-right: 0;
+        text-align: center;
+
+    }
+
+
+    .hero-content p {
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .hero-image {
+
+        margin-top: 40px;
+
+    }
+
+
+    .about-content {
+
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+
+
+    .about-section {
+
+        text-align: center;
+
+    }
+
+
+    .nav-link {
+
+        margin: 5px 0;
+
+    }
+
+
+    .navbar .btn-main {
+
+        margin-top: 10px;
+
+    }
+
+}
+
+
+/* ================================
+   RESPONSIVE MOBILE
+================================ */
+
+@media (max-width: 576px) {
+
+
+    .navbar {
+
+        padding: 15px 0;
+
+    }
+
+
+    .logo {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .hero-section {
+
+        padding: 45px 0;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 2.1rem;
+
+    }
+
+
+    .hero-image {
+
+        height: 230px;
+
+    }
+
+
+    .services-section {
+
+        padding-top: 20px;
+
+    }
+
+
+    .service-item {
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .featured-image-container {
+
+        height: 180px;
+
+    }
+
+
+    .about-image {
+
+        height: 220px;
+
+    }
+
+
+    .cta-container {
+
+        padding: 25px;
+
+        text-align: center;
+
+    }
+
+
+    .cta-container p {
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .footer-logo {
+
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+
+
+    .footer-social {
+
+        text-align: center;
+
+    }
+
+
+    .footer-social a {
+
+        margin: 0 10px;
+
+    }
+
+}
